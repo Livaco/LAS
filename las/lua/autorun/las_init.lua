@@ -16,7 +16,7 @@ Las.OnlineUsers = Las.OnlineUsers or {}
 
 -- Wow thats alot of tables.
 
-Las.Build.Version = "0.1.0"
+Las.Build.Version = "0.1.1"
 Las.Build.Revision = "08/06/2019"
 
 Las.Colors.PrintPrefix = Color(255, 255, 0)

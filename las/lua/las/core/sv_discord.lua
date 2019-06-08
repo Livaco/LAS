@@ -2,7 +2,7 @@
 -- This is placed in a seperate file to prevent it being Scripthooked.
 
 -- If this is true, it will attempt to use Discord Webhooks.
-Las.Discord.Enabled = true
+Las.Discord.Enabled = false
 
 -- The URL to the proxy PHP script provided.
 Las.Discord.Webhook = "http://www.example.com/discord_webhook.php"

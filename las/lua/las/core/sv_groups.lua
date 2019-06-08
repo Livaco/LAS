@@ -72,13 +72,20 @@ hook.Add("las.core.sqlpopulate", "las.groups.setupdefaultgroups", function()
         "las.darkrp.wallet",
         "las.groups.getgroup",
         "las.misc.cloak",
+        "las.misc.freeze",
+        "las.misc.cleardecals",
         "las.misc.physgun",
         "las.misc.uncloak",
+        "las.misc.unfreeze",
         "las.punishment.ban",
         "las.punishment.kick",
         "las.punishment.unban",
+        "las.teleport.goto",
+        "las.teleport.bring",
+        "las.teleport.return",
         "las.utils.armor",
-        "las.utils.hp"
+        "las.utils.hp",
+        "las.utils.respawn"
     })
     Las.Groups.RegisterUserGroup("Super Admin", {
         "las.chat.adminchat",
@@ -94,13 +101,20 @@ hook.Add("las.core.sqlpopulate", "las.groups.setupdefaultgroups", function()
         "las.groups.getgroup",
         "las.groups.setgroup",
         "las.misc.cloak",
+        "las.misc.freeze",
+        "las.misc.cleardecals",
         "las.misc.physgun",
         "las.misc.uncloak",
+        "las.misc.unfreeze",
         "las.punishment.ban",
         "las.punishment.kick",
         "las.punishment.unban",
+        "las.teleport.goto",
+        "las.teleport.bring",
+        "las.teleport.return",
         "las.utils.armor",
-        "las.utils.hp"
+        "las.utils.hp",
+        "las.utils.respawn"
     })
 end)
 

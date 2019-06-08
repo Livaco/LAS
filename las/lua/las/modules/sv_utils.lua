@@ -14,6 +14,7 @@ Las.Modules.RegisterModule("Utilities", Color(255, 150, 0), "The Utilities modul
 -- Register the permission nodes.
 Las.Groups.RegisterPermissionNode("las.utils.hp", "Health Command", "Allows access to the Health command.")
 Las.Groups.RegisterPermissionNode("las.utils.armor", "Armor Command", "Allows access to the Armor command.")
+Las.Groups.RegisterPermissionNode("las.utils.respawn", "Respawn Command", "Allows access to the Respawn command.")
 
 
 
