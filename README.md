@@ -10,4 +10,4 @@ This will set your usergroup to superadmin to allow you to run commands.
 
 ## Credits
 - [Livaco](https://github.com/Livaco)
-- [Owain](https://github.com/OwjoTheGreat) (Stole argument construction from his (xAdmin)[https://github.com/OwjoTheGreat/xadmin], thanks Owain <3)
+- [Owain](https://github.com/OwjoTheGreat) (Stole argument construction from his [xAdmin](https://github.com/OwjoTheGreat/xadmin), thanks Owain <3)
