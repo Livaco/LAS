@@ -9,5 +9,5 @@ Just download and drag LAS into your Garry's Mod addons folder. Next, start up y
 This will set your usergroup to superadmin to allow you to run commands.
 
 ## Credits
-- [Livaco](https://github.com/Livaco)
-- [Owain](https://github.com/OwjoTheGreat) (Stole argument construction from his [xAdmin](https://github.com/OwjoTheGreat/xadmin), thanks Owain <3)
+[Livaco](https://github.com/Livaco)
+[Owain](https://github.com/OwjoTheGreat) (Stole argument construction from his (xAdmin)[https://github.com/OwjoTheGreat/xadmin], thanks Owain <3)
