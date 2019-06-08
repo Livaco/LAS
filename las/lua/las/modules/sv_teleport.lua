@@ -14,7 +14,7 @@ Las.Modules.RegisterModule("Teleport", Color(255, 150, 0), "Commands for moving 
 -- Register the permission nodes.
 Las.Groups.RegisterPermissionNode("las.teleport.goto", "Goto", "Access to the goto command.")
 Las.Groups.RegisterPermissionNode("las.teleport.bring", "Bring", "Access to the bring command.")
-Las.Groups.RegisterPermissionNode("las.teleport.return", "Bring", "Access to the bring command.")
+Las.Groups.RegisterPermissionNode("las.teleport.return", "Return", "Access to the return command.")
 
 
 

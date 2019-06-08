@@ -14,6 +14,7 @@ Las.Modules.RegisterModule("Utilities", Color(255, 150, 0), "The Utilities modul
 -- Register the permission nodes.
 Las.Groups.RegisterPermissionNode("las.utils.hp", "Health Command", "Allows access to the Health command.")
 Las.Groups.RegisterPermissionNode("las.utils.armor", "Armor Command", "Allows access to the Armor command.")
+Las.Groups.RegisterPermissionNode("las.utils.strip", "Strip Command", "Allows access to the Strip command.")
 Las.Groups.RegisterPermissionNode("las.utils.respawn", "Respawn Command", "Allows access to the Respawn command.")
 
 
@@ -132,3 +133,47 @@ Las.Modules.RegisterCommand("armor", "Set a player's armor.", function(ply, args
     Las.Modules.SendMessage("Utilities", ply, "Invalid armor value.")
     Las.Modules.SendMessage("Utilities", ply, "Help: " .. cmdTable.help)
 end, "Utilities", "las.utils.armor", "!armor <player> <arthmetic operator>")
+
+
+--[[
+--  Strip Command
+]]--
+
+Las.Modules.RegisterCommand("strip", "Strip a player of their weapons.", function(ply, args, cmdTable)
+    if(!args[1]) then
+        Las.Modules.SendMessage("Utilities", ply, "Please specify a player.")
+        Las.Modules.SendMessage("Utilities", ply, "Help: " .. cmdTable.help)
+        return
+    end
+    local target = Las.Modules.GetPlayer(args[1], ply)
+    if(!target) then
+        Las.Modules.SendMessage("Utilities", ply, "Player was not found.")
+        Las.Modules.SendMessage("Utilities", ply, "Help: " .. cmdTable.help)
+        return
+    end
+
+    target:StripWeapons()
+    Las.Modules.Log("Utilities", ply, " stripped ", target, " of their weapons.")
+end, "Utilities", "las.utils.strip", "!strip <player>")
+
+
+--[[
+--  Respawn Command
+]]--
+
+Las.Modules.RegisterCommand("respawn", "Respawn a player.", function(ply, args, cmdTable)
+    if(!args[1]) then
+        Las.Modules.SendMessage("Utilities", ply, "Please specify a player.")
+        Las.Modules.SendMessage("Utilities", ply, "Help: " .. cmdTable.help)
+        return
+    end
+    local target = Las.Modules.GetPlayer(args[1], ply)
+    if(!target) then
+        Las.Modules.SendMessage("Utilities", ply, "Player was not found.")
+        Las.Modules.SendMessage("Utilities", ply, "Help: " .. cmdTable.help)
+        return
+    end
+
+    target:Spawn()
+    Las.Modules.Log("Utilities", ply, " respawned ", target, ".")
+end, "Utilities", "las.utils.respawn", "!respawn <player>")

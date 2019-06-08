@@ -114,7 +114,8 @@ hook.Add("las.core.sqlpopulate", "las.groups.setupdefaultgroups", function()
         "las.teleport.return",
         "las.utils.armor",
         "las.utils.hp",
-        "las.utils.respawn"
+        "las.utils.respawn",
+        "las.utils.strip"
     })
 end)
 
