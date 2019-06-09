@@ -17,6 +17,7 @@ Las.Groups.RegisterPermissionNode("las.misc.uncloak", "Uncloak", "Access to the 
 Las.Groups.RegisterPermissionNode("las.misc.freeze", "Freeze", "Access to the freeze command.")
 Las.Groups.RegisterPermissionNode("las.misc.unfreeze", "Unfreeze", "Access to the unfreeze command.")
 Las.Groups.RegisterPermissionNode("las.misc.cleardecals", "Cleardecals", "Access to the cleardecals command.")
+Las.Groups.RegisterPermissionNode("las.misc.steamid", "SteamID", "Access to the steamid command.")
 Las.Groups.RegisterPermissionNode("las.misc.physgun", "Physgun Players", "Allows the player to pick up players with their physgun.")
 
 
@@ -151,7 +152,7 @@ Las.Modules.RegisterCommand("steamid", "Get the players steamid.", function(ply,
     end
 
     Las.Modules.SendMessage("Misc", ply, "The SteamID of ", target, " is ", Color(255, 165, 0), target:SteamID(), Color(255, 255, 255, 255), ".")
-end, "Misc", "las.misc.unfreeze", "!unfreeze <player>")
+end, "Misc", "las.misc.steamid", "!steamid <player>")
 
 
 --[[
