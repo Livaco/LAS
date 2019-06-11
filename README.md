@@ -1,4 +1,5 @@
 **NOTE: LAS is in alpha and should not be considered as a daily driver admin system yet.**
+**TO VIEW PROGRESS GOTO https://devops.livaco.dev AND SELECT LAS**
 
 # Livaco's Admin System (LAS)
 Livaco's Admin System (LAS), is a lightweight admin system i've been working on. It's no where near done, but i've decided to release it as an alpha. Feel free to contribute if you really wish to.
